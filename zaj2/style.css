@@ -1,0 +1,43 @@
+*{  box-sizing: border-box; }
+
+body  { 
+  padding:0px;
+  margin:0px;
+  font-family: "Inter", sans-serif;  }
+
+h1  {    font-size: 50px; position: flex; }
+
+h4  {    font-size: 30px;  }
+
+p  {
+  color:blue;
+  background-color: bisque; 
+  padding:30px; }
+
+  header{
+     position: sticky;
+     background-color:lightgray;
+     display: flex; 
+     top:0px;
+     left:0px;
+     width:100%;
+     height:100%;
+     box-shadow: 0 0 10px 2px black;
+     align-items:center ;
+     justify-content:space-between;}
+
+     header nav  {display: block; }
+    header nav ul {
+      list-style: none;
+      display: flex;
+      gap:20px;
+      align-items: center; }
+
+    header nav ul a{
+      text-decoration: none;
+      color:black;
+    }
+    .aktywny{color:rgb(70, 161, 131);
+    font-size: 24px;}
+
+    main article {justify-content:space-between; }
