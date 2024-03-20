@@ -3,20 +3,21 @@
 body  { 
   padding:0px;
   margin:0px;
-  font-family: "Inter", sans-serif;  }
+  font-family: "Inter", sans-serif; 
+  background-color:rgb(223, 223, 223);
+}
+  
+
 
 h1  {    font-size: 50px; position: flex; }
 
 h4  {    font-size: 30px;  }
 
-p  {
-  color:blue;
-  background-color: bisque; 
-  padding:30px; }
-
   header{
      position: sticky;
-     background-color:lightgray;
+     background-color: rgb(255 255 255 / 10%);
+     overflow-x: hidden;
+     backdrop-filter: blur(10px);
      display: flex; 
      top:0px;
      left:0px;
@@ -24,7 +25,13 @@ p  {
      height:100%;
      box-shadow: 0 0 10px 2px black;
      align-items:center ;
-     justify-content:space-between;}
+     justify-content:space-between;
+     padding: 20px;
+     padding-right: 120px;
+     z-index: 100;
+    
+     
+    }
 
      header nav  {display: block; }
     header nav ul {
@@ -32,12 +39,60 @@ p  {
       display: flex;
       gap:20px;
       align-items: center; }
+    
+    #nazwa{color:rgb(123, 123, 208)}
 
     header nav ul a{
       text-decoration: none;
       color:black;
     }
-    .aktywny{color:rgb(70, 161, 131);
+    .aktywny{color:rgb(125, 207, 49);
     font-size: 24px;}
 
-    main article {justify-content:space-between; }
+    main article, main section{
+      justify-content:space-between; 
+      font-size: 20px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 120px;
+      padding-left: 120px;
+      display:block;
+    }
+    main article, main section{
+      justify-content:space-between; 
+      font-size: 20px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 120px;
+      padding-left: 120px;
+      display:block;
+    }
+
+    main article{
+      position: relative;
+      display:flex; 
+      flex-direction:row;
+      align-items:center;
+      justify-content: inter-word;
+      padding-left: 150px;
+      padding-right: 120px;
+      gap:20px;
+    }
+    .article-element{
+      width:50%;
+    }
+    #image
+    {
+      justify-content: left;
+      align-items:center;
+      width:100%;
+    }
+    #sub{
+      align-items:center;
+      text-align: center;
+      width:100%;
+    }
+    footer{
+      text-align: center;
+      background-color:rgb(192, 192, 192);
+    }
