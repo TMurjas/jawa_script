@@ -58,7 +58,7 @@ h4  {    font-size: 30px;  }
       padding-left: 120px;
       display:block;
     }
-    main article, main section{
+    main article{
       justify-content:space-between; 
       font-size: 20px;
       padding-top: 0px;
@@ -96,3 +96,26 @@ h4  {    font-size: 30px;  }
       text-align: center;
       background-color:rgb(192, 192, 192);
     }
+
+    main section
+    {
+      position: relative;
+      display:flex; 
+      flex-direction:row;
+      align-items:center;
+      justify-content: inter-word;
+      font-size: 20px;
+      padding-top: 80px;
+      padding-bottom: 120px;
+      padding-left: 120px;
+      width:100%;
+
+    }
+    #myspan{color:rgb(66, 175, 139);}
+    u{
+       text-decoration: underline;
+       text-decoration-thickness: 6px;
+       text-decoration-color:green;
+      }
+
+  
