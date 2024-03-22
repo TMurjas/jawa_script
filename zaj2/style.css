@@ -34,6 +34,7 @@ h4  {    font-size: 30px;  }
     }
 
      header nav  {display: block; }
+
     header nav ul {
       list-style: none;
       display: flex;
@@ -46,27 +47,10 @@ h4  {    font-size: 30px;  }
       text-decoration: none;
       color:black;
     }
+
     .aktywny{color:rgb(125, 207, 49);
     font-size: 24px;}
 
-    main article, main section{
-      justify-content:space-between; 
-      font-size: 20px;
-      padding-top: 0px;
-      padding-bottom: 0px;
-      padding-left: 120px;
-      padding-left: 120px;
-      display:block;
-    }
-    main article{
-      justify-content:space-between; 
-      font-size: 20px;
-      padding-top: 0px;
-      padding-bottom: 0px;
-      padding-left: 120px;
-      padding-left: 120px;
-      display:block;
-    }
 
     main article{
       position: relative;
@@ -78,14 +62,9 @@ h4  {    font-size: 30px;  }
       padding-right: 120px;
       gap:20px;
     }
+
     .article-element{
       width:50%;
-    }
-    #image
-    {
-      justify-content: left;
-      align-items:center;
-      width:100%;
     }
     #sub{
       align-items:center;
@@ -95,6 +74,7 @@ h4  {    font-size: 30px;  }
     footer{
       text-align: center;
       background-color:rgb(192, 192, 192);
+      margin:20px;
     }
 
     main section
@@ -109,13 +89,50 @@ h4  {    font-size: 30px;  }
       padding-bottom: 120px;
       padding-left: 120px;
       width:100%;
-
     }
-    #myspan{color:rgb(66, 175, 139);}
-    u{
-       text-decoration: underline;
-       text-decoration-thickness: 6px;
-       text-decoration-color:green;
-      }
 
+    #myspan{color:rgb(66, 175, 139);}
+
+    /* u{ */
+       /* text-decoration: underline; */
+       /* text-decoration-thickness: 6px; */
+       /* text-decoration-color:green; */
+      /* } */
+
+  main article::before{
+
+    content:"";
+    position:absolute;
+    top:0px;
+    left: 0px;
+    display:block;
+    width:100%;
+    margin:0px;
+    height:2px;
+    background-color: gray;
+  }
+
+  article h4::after 
+  {
+    content:"";
+    display:block;
+    width:70px;
+    height:3px;
+    background-color: rgb(25, 160, 36);
+    margin-top:5px;
+
+  }
+
+  section img
+  {
+    height:100%;
+    display:block;
+  }
   
+  section:first-child
+  {
+    height: calc(100vh - 100px);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
